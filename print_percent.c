@@ -7,16 +7,9 @@
  *
  * Return: The number of characters printed (1 for the percentage symbol).
  */
-int print_percent(va_list args)
+int print_percent(va_list __attribute__((unused))args)
 {
-	int count = 0;
+	write(1, "%", 1);
 
-	char c = '%';
-
-	if (c)
-	{
-		count = write(1, &c, 1);
-		return (count);
-	}
-	return (0);
+	return (1);
 }

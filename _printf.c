@@ -43,7 +43,7 @@ int _printf(const char *format, ...)
 			{
 				value = write(1, &format[i + 1], 1);
 				count = count + value;
-				i + 2;
+				i = i + 2;
 				continue;
 			}
 		}

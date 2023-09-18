@@ -25,7 +25,7 @@ int print_int(va_list args)
 		i++;
 	}
 
-	for (i; i >= 0; i--)
+	for (; i >= 0; i--)
 	{
 		c[0] = ('0' + arr[i]);
 		count  += write(1, c, 1);
